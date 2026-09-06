@@ -1,3 +1,7 @@
+## 1.0.4
+
+- Added rich visual badges for Brands and actual generated image previews for Gradients directly inside the README.
+
 ## 1.0.3
 
 - Added detailed token lists (Spacing, Gaps, Insets, Corners) to the README for better developer clarity.
@@ -19,6 +23,7 @@
 - Added typography system based on Google Fonts.
 - Added BuildContext theme extensions.
 - Added comprehensive design system example.
+
 
 
 
