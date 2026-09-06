@@ -20,7 +20,7 @@ def create_gradient_image(c1_hex, c2_hex, filename, width=150, height=30):
     
     img.save(filename)
 
-os.makedirs('docs/assets/gradients', exist_ok=True)
+os.makedirs('doc/assets/gradients', exist_ok=True)
 
 with open('lib/src/theme/stylix_gradients.dart', 'r', encoding='utf-8') as f:
     content = f.read()
@@ -30,10 +30,10 @@ matches = pattern.findall(content)
 
 md_lines = []
 for idx, (grad_id, name, c1, c2) in enumerate(matches):
-    filename = f'docs/assets/gradients/{grad_id}.png'
+    filename = f'doc/assets/gradients/{grad_id}.png'
     create_gradient_image(c1, c2, filename)
     # Using absolute raw github path for pub.dev compatibility
-    url = f"https://raw.githubusercontent.com/raouf-elmeddah/stylix_ui/main/docs/assets/gradients/{grad_id}.png"
+    url = f"https://raw.githubusercontent.com/raouf-elmeddah/stylix_ui/main/doc/assets/gradients/{grad_id}.png"
     md_lines.append(f"![{name}]({url})")
 
 brands_md = """
@@ -84,3 +84,4 @@ readme = re.sub(
 
 with open('README.md', 'w', encoding='utf-8', newline='\n') as f:
     f.write(readme)
+
