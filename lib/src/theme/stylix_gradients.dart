@@ -1,11 +1,11 @@
 // app_gradients.dart
 import 'package:flutter/material.dart';
 
-/// خيار تدرّج لوني يمكن للمستخدم اختياره كخلفية/ثيم.
+/// A gradient color option that the user can select as a background/theme.
 @immutable
 class AppGradient {
-  final String id; // مفتاح ثابت للحفظ (SharedPreferences/Hive/...).
-  final String name; // اسم العرض
+  final String id; // A constant key for storage (SharedPreferences/Hive/...).
+  final String name; // Display name
   final Color c1;
   final Color c2;
   final String description;
@@ -18,14 +18,14 @@ class AppGradient {
     required this.description,
   });
 
-  /// تدرّج افتراضي مناسب للخلفيات (من أعلى يسار إلى أسفل يمين).
+  /// A default gradient suitable for backgrounds (top left to bottom right).
   LinearGradient get linear => LinearGradient(
         begin: Alignment.topLeft,
         end: Alignment.bottomRight,
         colors: [c1, c2],
       );
 
-  /// بديل: تدرّج رأسي إن احتجته في أماكن معيّنة.
+  /// Alternative: A vertical gradient if needed in specific places.
   LinearGradient get vertical => LinearGradient(
         begin: Alignment.topCenter,
         end: Alignment.bottomCenter,
@@ -36,7 +36,7 @@ class AppGradient {
 class AppGradients {
   AppGradients._();
 
-  /// جميع التدرّجات المتاحة للاختيار داخل التطبيق.
+  /// All gradients available for selection within the app.
   static const List<AppGradient> all = [
     AppGradient(
       id: 'sunlit_glow',
@@ -580,10 +580,10 @@ class AppGradients {
     ),
   ];
 
-  /// خريطة للوصول السريع عبر id.
+  /// A map for quick access via id.
   static final Map<String, AppGradient> byId = {for (final g in all) g.id: g};
 
-  /// تدرّج افتراضي آمن إن لم يوجد شيء مخزّن أو كان id غير معروف.
+  /// A safe default gradient if nothing is stored or the id is unknown.
   static AppGradient fallback() => all.isNotEmpty
       ? all.first
       : const AppGradient(
@@ -594,9 +594,10 @@ class AppGradients {
           description: 'Default dark background gradient.',
         );
 
-  /// يسترجع التدرّج وفق id مخزّن (أو fallback).
+  /// Retrieves the gradient based on a stored id (or fallback).
   static AppGradient resolve(String? id) {
     if (id == null) return fallback();
     return byId[id] ?? fallback();
   }
 }
+
