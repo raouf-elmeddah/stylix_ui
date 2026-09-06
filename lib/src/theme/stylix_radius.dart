@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
 
-class AppRadius {
-  AppRadius._();
+class StylixRadius {
+  StylixRadius._();
 
   static const double none = 0.0;
   static const double xs = 4.0;
@@ -19,24 +19,24 @@ class StylixCorners {
   static const BorderRadius none = BorderRadius.zero;
 
   static const BorderRadius xs = BorderRadius.all(
-    Radius.circular(AppRadius.xs),
+    Radius.circular(StylixRadius.xs),
   );
   static const BorderRadius sm = BorderRadius.all(
-    Radius.circular(AppRadius.sm),
+    Radius.circular(StylixRadius.sm),
   );
   static const BorderRadius md = BorderRadius.all(
-    Radius.circular(AppRadius.md),
+    Radius.circular(StylixRadius.md),
   );
   static const BorderRadius lg = BorderRadius.all(
-    Radius.circular(AppRadius.lg),
+    Radius.circular(StylixRadius.lg),
   );
   static const BorderRadius xl = BorderRadius.all(
-    Radius.circular(AppRadius.xl),
+    Radius.circular(StylixRadius.xl),
   );
   static const BorderRadius xxl = BorderRadius.all(
-    Radius.circular(AppRadius.xxl),
+    Radius.circular(StylixRadius.xxl),
   );
   static const BorderRadius pill = BorderRadius.all(
-    Radius.circular(AppRadius.pill),
+    Radius.circular(StylixRadius.pill),
   );
 }

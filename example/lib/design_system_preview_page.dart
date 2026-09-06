@@ -590,8 +590,8 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
     return Container(
-      padding: AppCardStyles.padding,
-      decoration: AppCardStyles.muted(
+      padding: StylixCardStyles.padding,
+      decoration: StylixCardStyles.muted(
         c,
       ).copyWith(borderRadius: StylixCorners.xl),
       child: Row(
@@ -643,7 +643,7 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
   }) {
     return Container(
       margin: const EdgeInsets.only(bottom: StylixSpacing.md),
-      padding: AppCardStyles.padding,
+      padding: StylixCardStyles.padding,
       decoration: BoxDecoration(
         color: color,
         borderRadius: StylixCorners.xl,
@@ -673,8 +673,8 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
   Widget _demoCard(StylixThemeColors c, {required Widget child}) {
     return Container(
       width: double.infinity,
-      padding: AppCardStyles.padding,
-      decoration: AppCardStyles.surface(c),
+      padding: StylixCardStyles.padding,
+      decoration: StylixCardStyles.surface(c),
       child: child,
     );
   }

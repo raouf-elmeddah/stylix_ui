@@ -13,8 +13,8 @@ class StylixElevation {
   static const double xl = 12.0;
 }
 
-class AppShadows {
-  AppShadows._();
+class StylixShadows {
+  StylixShadows._();
 
   static List<BoxShadow> none(StylixThemeColors c) => const [];
 
