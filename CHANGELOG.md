@@ -1,3 +1,7 @@
+## 1.0.2
+
+- Complete rewrite of the README.md to provide comprehensive documentation for pub.dev.
+
 ## 1.0.1
 
 - Reintegrated 12 additional custom brand presets, bringing the total to 18.
@@ -11,4 +15,5 @@
 - Added typography system based on Google Fonts.
 - Added BuildContext theme extensions.
 - Added comprehensive design system example.
+
 
