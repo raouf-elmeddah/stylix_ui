@@ -251,27 +251,27 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
               children: [
                 ElevatedButton(
                   onPressed: () {},
-                  style: AppButtonStyles.primary(c, theme.textTheme),
+                  style: StylixButtonStyles.primary(c, theme.textTheme),
                   child: const Text('Primary Button'),
                 ),
                 FilledButton(
                   onPressed: () {},
-                  style: AppButtonStyles.accent(c, theme.textTheme),
+                  style: StylixButtonStyles.accent(c, theme.textTheme),
                   child: const Text('Accent Button'),
                 ),
                 OutlinedButton(
                   onPressed: () {},
-                  style: AppButtonStyles.outline(c, theme.textTheme),
+                  style: StylixButtonStyles.outline(c, theme.textTheme),
                   child: const Text('Outlined Button'),
                 ),
                 TextButton(
                   onPressed: () {},
-                  style: AppButtonStyles.text(c, theme.textTheme),
+                  style: StylixButtonStyles.text(c, theme.textTheme),
                   child: const Text('Text Button'),
                 ),
                 ElevatedButton.icon(
                   onPressed: () {},
-                  style: AppButtonStyles.primary(c, theme.textTheme),
+                  style: StylixButtonStyles.primary(c, theme.textTheme),
                   icon: const Icon(Icons.download_rounded),
                   label: const Text('With Icon'),
                 ),
@@ -537,7 +537,7 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
                 Expanded(
                   child: OutlinedButton(
                     onPressed: () => _showPreviewDialog(context),
-                    style: AppButtonStyles.outline(c, theme.textTheme),
+                    style: StylixButtonStyles.outline(c, theme.textTheme),
                     child: const Text('Show Dialog'),
                   ),
                 ),
@@ -545,7 +545,7 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
                 Expanded(
                   child: ElevatedButton(
                     onPressed: () => _showSnack(context),
-                    style: AppButtonStyles.primary(c, theme.textTheme),
+                    style: StylixButtonStyles.primary(c, theme.textTheme),
                     child: const Text('Show Snackbar'),
                   ),
                 ),
@@ -781,12 +781,12 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(context),
-              style: AppButtonStyles.text(c, theme.textTheme),
+              style: StylixButtonStyles.text(c, theme.textTheme),
               child: const Text('Cancel'),
             ),
             ElevatedButton(
               onPressed: () => Navigator.pop(context),
-              style: AppButtonStyles.primary(c, theme.textTheme),
+              style: StylixButtonStyles.primary(c, theme.textTheme),
               child: const Text('Confirm'),
             ),
           ],

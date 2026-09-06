@@ -4,8 +4,8 @@ import 'stylix_radius.dart';
 import 'stylix_spacing.dart';
 import 'stylix_theme_colors.dart';
 
-class AppButtonStyles {
-  AppButtonStyles._();
+class StylixButtonStyles {
+  StylixButtonStyles._();
 
   static ButtonStyle primary(StylixThemeColors c, TextTheme textTheme) {
     return ElevatedButton.styleFrom(
