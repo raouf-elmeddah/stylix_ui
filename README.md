@@ -7,7 +7,7 @@ A highly opinionated, semantic design system and theme package for Flutter.
 ## Features
 
 - **Semantic Tokens:** Stop hardcoding colors like `Colors.grey[300]`. Use `context.stylixColors.surfaceContainerHigh` to ensure perfect light/dark mode transitions and semantic meaning.
-- **6 Custom Brand Presets:** From `Jade Canopy` to `Midnight Armor`, switch your app's entire visual identity with a single line of code.
+- **18 Custom Brand Presets:** From `Jade Canopy` to `Midnight Armor`, switch your app's entire visual identity with a single line of code.
 - **Typographic Discipline:** A strict, non-default type scale built on `GoogleFonts` that ensures your app doesn't look like a templated wireframe.
 - **Developer Ergonomics:** Extension methods on `BuildContext` make accessing the theme incredibly fast and autocomplete-friendly.
 
@@ -84,9 +84,22 @@ Container(
 - Rouge Synth
 - Midnight Armor
 - Toxic Flora
+- Arctic Forge
+- Skyline Pulse
+- Neon Velvet
+- Violet Alloy
+- Phantom Mint
+- Ember Core
+- Royal Blush
+- Deep Forest
+- Tidal Mist
+- Solar Eclipse
+- Neon Tide
+- Lavender Pulse
 
 ## Example 
 
 Check out the `example/` folder for a comprehensive `DesignSystemPreviewPage` showcasing all tokens, typography, gradients, and components.
+
 
 

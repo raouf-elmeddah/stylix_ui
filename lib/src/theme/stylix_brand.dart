@@ -8,6 +8,18 @@ enum StylixBrand {
   rougeSynth,
   midnightArmor,
   toxicFlora,
+  arcticForge,
+  skylinePulse,
+  neonVelvet,
+  violetAlloy,
+  phantomMint,
+  emberCore,
+  royalBlush,
+  deepForest,
+  tidalMist,
+  solarEclipse,
+  neonTide,
+  lavenderPulse,
 }
 
 /// Defines the core primary and accent colors for a brand.
@@ -41,6 +53,30 @@ extension StylixBrandExtension on StylixBrand {
         return 'Midnight Armor';
       case StylixBrand.toxicFlora:
         return 'Toxic Flora';
+      case StylixBrand.arcticForge:
+        return 'Arctic Forge';
+      case StylixBrand.skylinePulse:
+        return 'Skyline Pulse';
+      case StylixBrand.neonVelvet:
+        return 'Neon Velvet';
+      case StylixBrand.violetAlloy:
+        return 'Violet Alloy';
+      case StylixBrand.phantomMint:
+        return 'Phantom Mint';
+      case StylixBrand.emberCore:
+        return 'Ember Core';
+      case StylixBrand.royalBlush:
+        return 'Royal Blush';
+      case StylixBrand.deepForest:
+        return 'Deep Forest';
+      case StylixBrand.tidalMist:
+        return 'Tidal Mist';
+      case StylixBrand.solarEclipse:
+        return 'Solar Eclipse';
+      case StylixBrand.neonTide:
+        return 'Neon Tide';
+      case StylixBrand.lavenderPulse:
+        return 'Lavender Pulse';
     }
   }
 }
