@@ -20,17 +20,17 @@ class AppGradient {
 
   /// تدرّج افتراضي مناسب للخلفيات (من أعلى يسار إلى أسفل يمين).
   LinearGradient get linear => LinearGradient(
-    begin: Alignment.topLeft,
-    end: Alignment.bottomRight,
-    colors: [c1, c2],
-  );
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+        colors: [c1, c2],
+      );
 
   /// بديل: تدرّج رأسي إن احتجته في أماكن معيّنة.
   LinearGradient get vertical => LinearGradient(
-    begin: Alignment.topCenter,
-    end: Alignment.bottomCenter,
-    colors: [c1, c2],
-  );
+        begin: Alignment.topCenter,
+        end: Alignment.bottomCenter,
+        colors: [c1, c2],
+      );
 }
 
 class AppGradients {

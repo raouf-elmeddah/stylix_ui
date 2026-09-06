@@ -54,7 +54,7 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
             icon: const Icon(Icons.notifications_none_rounded),
           ),
           Padding(
-            padding: const EdgeInsetsDirectional.only(end: AppSpacing.sm),
+            padding: const EdgeInsetsDirectional.only(end: StylixSpacing.sm),
             child: DecoratedBox(
               decoration: BoxDecoration(
                 color: c.surfaceContainer,
@@ -62,9 +62,8 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
                 border: Border.all(color: c.border),
               ),
               child: IconButton(
-                tooltip: isDark
-                    ? 'Switch to light mode'
-                    : 'Switch to dark mode',
+                tooltip:
+                    isDark ? 'Switch to light mode' : 'Switch to dark mode',
                 onPressed: () {
                   MyApp.of(context).toggleThemeMode();
                 },
@@ -117,7 +116,6 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
         children: [
           _sectionTitle(context, 'Overview'),
           _overviewBanner(context, c),
-
           _sectionTitle(context, 'Theme Controls'),
           _demoCard(
             c,
@@ -131,7 +129,7 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                AppGap.hMd,
+                StylixGap.hMd,
                 DropdownButtonFormField<StylixBrand>(
                   initialValue: MyApp.of(context).brand,
                   decoration: const InputDecoration(
@@ -149,7 +147,7 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
                     MyApp.of(context).setBrand(value);
                   },
                 ),
-                AppGap.hLg,
+                StylixGap.hLg,
                 SegmentedButton<ThemeMode>(
                   segments: const [
                     ButtonSegment<ThemeMode>(
@@ -176,7 +174,6 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
               ],
             ),
           ),
-
           _sectionTitle(context, 'Color Roles'),
           _colorTile(
             label: 'Background',
@@ -215,7 +212,6 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
             textColor: c.onAccent,
             subtitle: 'Secondary emphasis / CTA',
           ),
-
           _sectionTitle(context, 'Typography'),
           _demoCard(
             c,
@@ -229,14 +225,14 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                AppGap.hSm,
+                StylixGap.hSm,
                 Text(
                   'This paragraph uses textSecondary and simulates body content inside a regular card or section.',
                   style: theme.textTheme.bodyMedium?.copyWith(
                     color: c.textSecondary,
                   ),
                 ),
-                AppGap.hSm,
+                StylixGap.hSm,
                 Text(
                   'Muted helper text appears here for hints, metadata, and less important details.',
                   style: theme.textTheme.bodySmall?.copyWith(
@@ -246,13 +242,12 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
               ],
             ),
           ),
-
           _sectionTitle(context, 'Buttons'),
           _demoCard(
             c,
             child: Wrap(
-              spacing: AppSpacing.md,
-              runSpacing: AppSpacing.md,
+              spacing: StylixSpacing.md,
+              runSpacing: StylixSpacing.md,
               children: [
                 ElevatedButton(
                   onPressed: () {},
@@ -283,7 +278,6 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
               ],
             ),
           ),
-
           _sectionTitle(context, 'Inputs'),
           _demoCard(
             c,
@@ -297,7 +291,7 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
                     prefixIcon: Icon(Icons.search),
                   ),
                 ),
-                AppGap.hLg,
+                StylixGap.hLg,
                 TextField(
                   controller: nameController,
                   decoration: const InputDecoration(
@@ -305,7 +299,7 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
                     hintText: 'Enter your full name',
                   ),
                 ),
-                AppGap.hLg,
+                StylixGap.hLg,
                 TextField(
                   controller: emailController,
                   decoration: const InputDecoration(
@@ -314,7 +308,7 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
                     suffixIcon: Icon(Icons.mail_outline_rounded),
                   ),
                 ),
-                AppGap.hLg,
+                StylixGap.hLg,
                 const TextField(
                   maxLines: 3,
                   decoration: InputDecoration(
@@ -326,7 +320,6 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
               ],
             ),
           ),
-
           _sectionTitle(context, 'Selection Controls'),
           _demoCard(
             c,
@@ -384,7 +377,6 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
               ],
             ),
           ),
-
           _sectionTitle(context, 'Cards & Lists'),
           _demoCard(
             c,
@@ -416,13 +408,12 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
               ],
             ),
           ),
-
           _sectionTitle(context, 'Chips'),
           _demoCard(
             c,
             child: Wrap(
-              spacing: AppSpacing.sm + AppSpacing.xs,
-              runSpacing: AppSpacing.sm + AppSpacing.xs,
+              spacing: StylixSpacing.sm + StylixSpacing.xs,
+              runSpacing: StylixSpacing.sm + StylixSpacing.xs,
               children: [
                 Chip(
                   label: const Text('Default'),
@@ -447,7 +438,6 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
               ],
             ),
           ),
-
           _sectionTitle(context, 'Semantic States'),
           _statusBanner(
             bg: c.successContainer,
@@ -456,7 +446,7 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
             message: 'Operation completed successfully.',
             icon: Icons.check_circle_outline_rounded,
           ),
-          AppGap.hMd,
+          StylixGap.hMd,
           _statusBanner(
             bg: c.warningContainer,
             fg: c.warning,
@@ -464,7 +454,7 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
             message: 'Please review highlighted fields before continuing.',
             icon: Icons.warning_amber_rounded,
           ),
-          AppGap.hMd,
+          StylixGap.hMd,
           _statusBanner(
             bg: c.infoContainer,
             fg: c.info,
@@ -472,7 +462,7 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
             message: 'New update available for your workspace.',
             icon: Icons.info_outline_rounded,
           ),
-          AppGap.hMd,
+          StylixGap.hMd,
           _statusBanner(
             bg: c.errorContainer,
             fg: c.error,
@@ -480,7 +470,6 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
             message: 'Something went wrong while processing the request.',
             icon: Icons.error_outline_rounded,
           ),
-
           _sectionTitle(context, 'Progress & Metrics'),
           _demoCard(
             c,
@@ -494,7 +483,7 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
                     fontWeight: FontWeight.w600,
                   ),
                 ),
-                AppGap.hSm,
+                StylixGap.hSm,
                 LinearProgressIndicator(
                   value: 0.68,
                   backgroundColor: c.surfaceContainerHigh,
@@ -502,7 +491,7 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
                   minHeight: 10,
                   borderRadius: StylixCorners.pill,
                 ),
-                AppGap.hXl,
+                StylixGap.hXl,
                 Text(
                   'Team performance',
                   style: TextStyle(
@@ -510,7 +499,7 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
                     fontWeight: FontWeight.w600,
                   ),
                 ),
-                AppGap.hSm,
+                StylixGap.hSm,
                 Slider(
                   value: sliderValue,
                   min: 0,
@@ -524,13 +513,12 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
               ],
             ),
           ),
-
           _sectionTitle(context, 'Badges / Small Indicators'),
           _demoCard(
             c,
             child: Wrap(
-              spacing: AppSpacing.sm + AppSpacing.xs,
-              runSpacing: AppSpacing.sm + AppSpacing.xs,
+              spacing: StylixSpacing.sm + StylixSpacing.xs,
+              runSpacing: StylixSpacing.sm + StylixSpacing.xs,
               children: [
                 _badge('Primary', c.primary, c.onPrimary),
                 _badge('Accent', c.accent, c.onAccent),
@@ -541,7 +529,6 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
               ],
             ),
           ),
-
           _sectionTitle(context, 'Dialog Preview'),
           _demoCard(
             c,
@@ -554,7 +541,7 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
                     child: const Text('Show Dialog'),
                   ),
                 ),
-                AppGap.wMd,
+                StylixGap.wMd,
                 Expanded(
                   child: ElevatedButton(
                     onPressed: () => _showSnack(context),
@@ -565,7 +552,6 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
               ],
             ),
           ),
-
           _sectionTitle(context, 'Dark Preview'),
           SwitchListTile(
             contentPadding: EdgeInsets.zero,
@@ -576,9 +562,8 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
               setState(() => useDarkPreview = value);
             },
           ),
-          if (useDarkPreview) ...[AppGap.hSm, _darkPreviewBlock()],
-
-          AppGap.hXxxl,
+          if (useDarkPreview) ...[StylixGap.hSm, _darkPreviewBlock()],
+          StylixGap.hXxxl,
         ],
       ),
     );
@@ -588,7 +573,8 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
     final c = context.stylixColors;
 
     return Padding(
-      padding: const EdgeInsets.only(top: AppSpacing.xl, bottom: AppSpacing.md),
+      padding: const EdgeInsets.only(
+          top: StylixSpacing.xl, bottom: StylixSpacing.md),
       child: Text(
         title,
         style: TextStyle(
@@ -622,7 +608,7 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
               color: c.onPrimary,
             ),
           ),
-          AppGap.wLg,
+          StylixGap.wLg,
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -635,7 +621,7 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
                     fontSize: 16,
                   ),
                 ),
-                AppGap.hXs,
+                StylixGap.hXs,
                 Text(
                   'Use this screen to validate colors, contrast, and component states before applying them across the app.',
                   style: TextStyle(color: c.textSecondary, height: 1.35),
@@ -656,7 +642,7 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
     Color? borderColor,
   }) {
     return Container(
-      margin: const EdgeInsets.only(bottom: AppSpacing.md),
+      margin: const EdgeInsets.only(bottom: StylixSpacing.md),
       padding: AppCardStyles.padding,
       decoration: BoxDecoration(
         color: color,
@@ -674,7 +660,7 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
               fontSize: 16,
             ),
           ),
-          AppGap.hXs,
+          StylixGap.hXs,
           Text(
             subtitle,
             style: TextStyle(color: textColor.withValues(alpha: .8)),
@@ -731,7 +717,7 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
     required IconData icon,
   }) {
     return Container(
-      padding: const EdgeInsets.all(AppSpacing.md),
+      padding: const EdgeInsets.all(StylixSpacing.md),
       decoration: BoxDecoration(
         color: bg,
         borderRadius: StylixCorners.xl,
@@ -741,7 +727,7 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Icon(icon, color: fg),
-          AppGap.wMd,
+          StylixGap.wMd,
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -750,7 +736,7 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
                   title,
                   style: TextStyle(color: fg, fontWeight: FontWeight.w700),
                 ),
-                AppGap.hXs,
+                StylixGap.hXs,
                 Text(
                   message,
                   style: TextStyle(
@@ -856,9 +842,9 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
               fontWeight: FontWeight.w700,
             ),
           ),
-          AppGap.hLg,
+          StylixGap.hLg,
           Container(
-            padding: const EdgeInsets.all(AppSpacing.md),
+            padding: const EdgeInsets.all(StylixSpacing.md),
             decoration: BoxDecoration(
               color: surface,
               borderRadius: StylixCorners.xl,
@@ -874,12 +860,12 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                AppGap.hXs,
+                StylixGap.hXs,
                 const Text(
                   'Quick embedded preview for dark surfaces and typography.',
                   style: TextStyle(color: textSecondary, height: 1.35),
                 ),
-                AppGap.hLg,
+                StylixGap.hLg,
                 Row(
                   children: [
                     Expanded(
@@ -896,7 +882,7 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
                         child: const Text('Primary'),
                       ),
                     ),
-                    AppGap.wSm,
+                    StylixGap.wSm,
                     Expanded(
                       child: FilledButton(
                         style: FilledButton.styleFrom(
@@ -913,9 +899,9 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
                     ),
                   ],
                 ),
-                AppGap.hMd,
+                StylixGap.hMd,
                 Container(
-                  padding: const EdgeInsets.all(AppSpacing.md),
+                  padding: const EdgeInsets.all(StylixSpacing.md),
                   decoration: BoxDecoration(
                     color: successBg,
                     borderRadius: StylixCorners.lg,
@@ -924,7 +910,7 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
                   child: const Row(
                     children: [
                       Icon(Icons.check_circle_outline, color: success),
-                      SizedBox(width: AppSpacing.sm + AppSpacing.xs),
+                      SizedBox(width: StylixSpacing.sm + StylixSpacing.xs),
                       Expanded(
                         child: Text(
                           'Everything looks good in dark mode too.',
@@ -934,7 +920,7 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
                     ],
                   ),
                 ),
-                AppGap.hMd,
+                StylixGap.hMd,
                 Container(
                   height: 46,
                   decoration: BoxDecoration(
@@ -943,7 +929,7 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
                     border: Border.all(color: border),
                   ),
                   padding: const EdgeInsets.symmetric(
-                    horizontal: AppSpacing.md,
+                    horizontal: StylixSpacing.md,
                   ),
                   alignment: Alignment.centerLeft,
                   child: const Text(
@@ -959,4 +945,3 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
     );
   }
 }
-

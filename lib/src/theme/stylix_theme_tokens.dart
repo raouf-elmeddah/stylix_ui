@@ -11,36 +11,29 @@ class StylixThemeTokens {
       surface: p.surface,
       surfaceContainer: p.surfaceContainer,
       surfaceContainerHigh: p.surfaceContainerHigh,
-
       border: p.border,
       divider: p.divider,
       card: p.card,
       shadow: p.shadow,
       overlay: p.overlay,
-
       textPrimary: p.textPrimary,
       textSecondary: p.textSecondary,
       textMuted: p.textMuted,
       textInverse: p.textInverse,
-
       primary: p.primary,
       onPrimary: p.onPrimary,
       primaryContainer: StylixPalette.container(p.primary, 0.12),
       onPrimaryContainer: p.primary,
-
       accent: p.accent,
       onAccent: p.onAccent,
-
       success: StylixPalette.semantic.success,
       warning: StylixPalette.semantic.warning,
       info: StylixPalette.semantic.info,
       error: StylixPalette.semantic.error,
       onError: Colors.white,
-
       inputFill: p.inputFill,
       inputBorder: p.inputBorder,
       inputHint: p.inputHint,
-
       successContainer: StylixPalette.container(
         StylixPalette.semantic.success,
         0.12,
@@ -63,36 +56,29 @@ class StylixThemeTokens {
       surface: p.surface,
       surfaceContainer: p.surfaceContainer,
       surfaceContainerHigh: p.surfaceContainerHigh,
-
       border: p.border,
       divider: p.divider,
       card: p.card,
       shadow: p.shadow,
       overlay: p.overlay,
-
       textPrimary: p.textPrimary,
       textSecondary: p.textSecondary,
       textMuted: p.textMuted,
       textInverse: p.textInverse,
-
       primary: p.primary,
       onPrimary: p.onPrimary,
       primaryContainer: StylixPalette.container(p.primary, 0.20),
       onPrimaryContainer: p.onPrimary,
-
       accent: p.accent,
       onAccent: p.onAccent,
-
       success: StylixPalette.semantic.success,
       warning: StylixPalette.semantic.warning,
       info: StylixPalette.semantic.info,
       error: StylixPalette.semantic.error,
       onError: Colors.white,
-
       inputFill: p.inputFill,
       inputBorder: p.inputBorder,
       inputHint: p.inputHint,
-
       successContainer: StylixPalette.container(
         StylixPalette.semantic.success,
         0.20,

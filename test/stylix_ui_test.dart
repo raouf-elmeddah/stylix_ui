@@ -18,18 +18,20 @@ void main() {
 
   group('StylixTheme', () {
     test('generates light theme with extensions', () {
-      final theme = StylixTheme.light(StylixBrand.defaultBrand, locale: const Locale('en', 'US'));
+      final theme = StylixTheme.light(StylixBrand.defaultBrand,
+          locale: const Locale('en', 'US'));
       expect(theme.brightness, Brightness.light);
-      
+
       final extension = theme.extension<StylixColorsExtension>();
       expect(extension, isNotNull);
       expect(extension!.colors.background, isNotNull);
     });
 
     test('generates dark theme with extensions', () {
-      final theme = StylixTheme.dark(StylixBrand.midnightArmor, locale: const Locale('en', 'US'));
+      final theme = StylixTheme.dark(StylixBrand.midnightArmor,
+          locale: const Locale('en', 'US'));
       expect(theme.brightness, Brightness.dark);
-      
+
       final extension = theme.extension<StylixColorsExtension>();
       expect(extension, isNotNull);
     });
@@ -41,7 +43,8 @@ void main() {
 
       await tester.pumpWidget(
         MaterialApp(
-          theme: StylixTheme.light(StylixBrand.defaultBrand, locale: const Locale('en', 'US')),
+          theme: StylixTheme.light(StylixBrand.defaultBrand,
+              locale: const Locale('en', 'US')),
           home: Builder(
             builder: (context) {
               resolvedColors = context.stylixColors;

@@ -93,12 +93,9 @@ class StylixTheme {
       shadowColor: colors.shadow,
       splashColor: colors.overlay,
       highlightColor: colors.overlay,
-
       textTheme: textTheme,
       primaryTextTheme: primaryTextTheme,
-
       extensions: [StylixColorsExtension(colors)],
-
       appBarTheme: AppBarTheme(
         elevation: StylixElevation.none,
         centerTitle: false,
@@ -108,7 +105,6 @@ class StylixTheme {
         shadowColor: colors.shadow,
         titleTextStyle: textTheme.titleLarge,
       ),
-
       cardTheme: CardThemeData(
         color: colors.card,
         elevation: isDark ? StylixElevation.none : StylixElevation.xs,
@@ -117,7 +113,6 @@ class StylixTheme {
         shape: const RoundedRectangleBorder(borderRadius: StylixCorners.xl),
         margin: EdgeInsets.zero,
       ),
-
       dialogTheme: DialogThemeData(
         backgroundColor: colors.surface,
         surfaceTintColor: Colors.transparent,
@@ -125,7 +120,6 @@ class StylixTheme {
         titleTextStyle: textTheme.titleLarge,
         contentTextStyle: textTheme.bodyMedium,
       ),
-
       snackBarTheme: SnackBarThemeData(
         behavior: SnackBarBehavior.floating,
         backgroundColor: colors.surfaceContainerHigh,
@@ -134,7 +128,6 @@ class StylixTheme {
         ),
         shape: const RoundedRectangleBorder(borderRadius: StylixCorners.lg),
       ),
-
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
         fillColor: colors.inputFill,
@@ -168,7 +161,6 @@ class StylixTheme {
           borderSide: BorderSide(color: colors.inputBorder),
         ),
       ),
-
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
           elevation: StylixElevation.none,
@@ -181,7 +173,6 @@ class StylixTheme {
           shape: const RoundedRectangleBorder(borderRadius: StylixCorners.lg),
         ),
       ),
-
       outlinedButtonTheme: OutlinedButtonThemeData(
         style: OutlinedButton.styleFrom(
           foregroundColor: colors.primary,
@@ -191,7 +182,6 @@ class StylixTheme {
           shape: const RoundedRectangleBorder(borderRadius: StylixCorners.lg),
         ),
       ),
-
       textButtonTheme: TextButtonThemeData(
         style: TextButton.styleFrom(
           foregroundColor: colors.primary,
@@ -200,14 +190,12 @@ class StylixTheme {
           shape: const RoundedRectangleBorder(borderRadius: StylixCorners.md),
         ),
       ),
-
       floatingActionButtonTheme: FloatingActionButtonThemeData(
         elevation: StylixElevation.md,
         backgroundColor: colors.accent,
         foregroundColor: colors.onAccent,
         shape: const RoundedRectangleBorder(borderRadius: StylixCorners.xl),
       ),
-
       chipTheme: ChipThemeData(
         backgroundColor: colors.surfaceContainer,
         disabledColor: colors.surfaceContainerHigh,
@@ -221,11 +209,9 @@ class StylixTheme {
         side: BorderSide(color: colors.border),
         shape: const RoundedRectangleBorder(borderRadius: StylixCorners.md),
       ),
-
       checkboxTheme: const CheckboxThemeData(
         shape: RoundedRectangleBorder(borderRadius: StylixCorners.xs),
       ),
-
       radioTheme: RadioThemeData(
         fillColor: WidgetStateProperty.resolveWith((states) {
           if (states.contains(WidgetState.selected)) {
@@ -234,7 +220,6 @@ class StylixTheme {
           return colors.textMuted;
         }),
       ),
-
       switchTheme: SwitchThemeData(
         thumbColor: WidgetStateProperty.resolveWith((states) {
           if (states.contains(WidgetState.selected)) {
@@ -249,7 +234,6 @@ class StylixTheme {
           return StylixPalette.neutral.n300;
         }),
       ),
-
       sliderTheme: SliderThemeData(
         activeTrackColor: colors.primary,
         inactiveTrackColor: colors.surfaceContainerHigh,
@@ -260,13 +244,11 @@ class StylixTheme {
           color: colors.onPrimary,
         ),
       ),
-
       progressIndicatorTheme: ProgressIndicatorThemeData(
         color: colors.primary,
         linearTrackColor: colors.surfaceContainerHigh,
         circularTrackColor: colors.surfaceContainerHigh,
       ),
-
       navigationBarTheme: NavigationBarThemeData(
         backgroundColor: colors.surface,
         indicatorColor: colors.primaryContainer,

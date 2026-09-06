@@ -19,42 +19,42 @@ class AppShadows {
   static List<BoxShadow> none(StylixThemeColors c) => const [];
 
   static List<BoxShadow> xs(StylixThemeColors c) => [
-    BoxShadow(
-      color: c.shadow.withValues(alpha: 0.08),
-      blurRadius: 6,
-      offset: const Offset(0, 1),
-    ),
-  ];
+        BoxShadow(
+          color: c.shadow.withValues(alpha: 0.08),
+          blurRadius: 6,
+          offset: const Offset(0, 1),
+        ),
+      ];
 
   static List<BoxShadow> sm(StylixThemeColors c) => [
-    BoxShadow(
-      color: c.shadow.withValues(alpha: 0.10),
-      blurRadius: 10,
-      offset: const Offset(0, 2),
-    ),
-  ];
+        BoxShadow(
+          color: c.shadow.withValues(alpha: 0.10),
+          blurRadius: 10,
+          offset: const Offset(0, 2),
+        ),
+      ];
 
   static List<BoxShadow> md(StylixThemeColors c) => [
-    BoxShadow(
-      color: c.shadow.withValues(alpha: 0.12),
-      blurRadius: 16,
-      offset: const Offset(0, 4),
-    ),
-  ];
+        BoxShadow(
+          color: c.shadow.withValues(alpha: 0.12),
+          blurRadius: 16,
+          offset: const Offset(0, 4),
+        ),
+      ];
 
   static List<BoxShadow> lg(StylixThemeColors c) => [
-    BoxShadow(
-      color: c.shadow.withValues(alpha: 0.14),
-      blurRadius: 24,
-      offset: const Offset(0, 8),
-    ),
-  ];
+        BoxShadow(
+          color: c.shadow.withValues(alpha: 0.14),
+          blurRadius: 24,
+          offset: const Offset(0, 8),
+        ),
+      ];
 
   static List<BoxShadow> xl(StylixThemeColors c) => [
-    BoxShadow(
-      color: c.shadow.withValues(alpha: 0.16),
-      blurRadius: 32,
-      offset: const Offset(0, 12),
-    ),
-  ];
+        BoxShadow(
+          color: c.shadow.withValues(alpha: 0.16),
+          blurRadius: 32,
+          offset: const Offset(0, 12),
+        ),
+      ];
 }
