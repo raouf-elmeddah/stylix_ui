@@ -1,3 +1,7 @@
+## 1.0.3
+
+- Added detailed token lists (Spacing, Gaps, Insets, Corners) to the README for better developer clarity.
+
 ## 1.0.2
 
 - Complete rewrite of the README.md to provide comprehensive documentation for pub.dev.
@@ -15,5 +19,6 @@
 - Added typography system based on Google Fonts.
 - Added BuildContext theme extensions.
 - Added comprehensive design system example.
+
 
 

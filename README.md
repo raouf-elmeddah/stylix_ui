@@ -29,7 +29,7 @@ Add `stylix_ui` to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  stylix_ui: ^1.0.1
+  stylix_ui: ^1.0.3
 ```
 
 ### 2. Initialize the Theme
@@ -98,6 +98,16 @@ print(currentBrand.displayName); // "Neon Velvet"
 ### 3. Spacing & Gaps (`StylixSpacing` / `StylixGap`)
 Stop hardcoding `16.0` and `8.0`. Use the standardized semantic spacing scale.
 
+**Available Spacing Values (`StylixSpacing`):**
+`none`, `xxs`, `xs`, `sm`, `md`, `lg`, `xl`, `xxl`, `xxxl`, `huge`
+
+**Available Gaps (`StylixGap`):**
+* **Horizontal:** `wNone`, `wXxs`, `wXs`, `wSm`, `wMd`, `wLg`, `wXl`, `wXxl`, `wXxxl`
+* **Vertical:** `hNone`, `hXxs`, `hXs`, `hSm`, `hMd`, `hLg`, `hXl`, `hXxl`, `hXxxl`
+
+**Convenience Padding (`StylixInsets`):**
+`screenPadding`, `cardPadding`, `dialogPadding`, `buttonPadding`, `chipPadding`, `inputContentPadding`
+
 ```dart
 // ❌ Bad: Magic Numbers
 Padding(
@@ -125,14 +135,18 @@ Padding(
 ```
 *(Note: `StylixSpacing.none` and `StylixGap.hNone` / `wNone` are also available for `0.0` spacing!)*
 
-### 4. Borders & Radii (`StylixRadius`)
-Achieve consistent roundness across your entire app.
+### 4. Borders & Radius (`StylixRadius` & `StylixCorners`)
+Achieve consistent roundness across your entire app using explicit doubles (`StylixRadius`) or pre-built `BorderRadius` objects (`StylixCorners`).
+
+**Available Radius Tokens:**
+`none`, `xs`, `sm`, `md`, `lg`, `xl`, `xxl`, `pill`
 
 ```dart
 Container(
   decoration: BoxDecoration(
     color: context.stylixColors.card,
-    borderRadius: BorderRadius.all(StylixRadius.md), // 12.0
+    // Use pre-built BorderRadius objects!
+    borderRadius: StylixCorners.md, 
   ),
 )
 ```
