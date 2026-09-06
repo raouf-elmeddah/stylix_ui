@@ -7,7 +7,7 @@ A highly opinionated, semantic design system and theme package for Flutter.
 ## Features
 
 - **Semantic Tokens:** Stop hardcoding colors like `Colors.grey[300]`. Use `context.stylixColors.surfaceContainerHigh` to ensure perfect light/dark mode transitions and semantic meaning.
-- **17 Custom Brand Presets:** From `Arctic Forge` to `Neon Velvet`, switch your app's entire visual identity with a single line of code.
+- **6 Custom Brand Presets:** From `Jade Canopy` to `Midnight Armor`, switch your app's entire visual identity with a single line of code.
 - **Typographic Discipline:** A strict, non-default type scale built on `GoogleFonts` that ensures your app doesn't look like a templated wireframe.
 - **Developer Ergonomics:** Extension methods on `BuildContext` make accessing the theme incredibly fast and autocomplete-friendly.
 
@@ -40,8 +40,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Choose from 17 bold presets
-    const brand = StylixBrand.arcticForge;
+    // Choose from 6 bold presets
+    const brand = StylixBrand.jadeCanopy;
 
     return MaterialApp(
       title: 'Stylix App',
@@ -63,7 +63,7 @@ Container(
   // Use semantic colors instead of raw hex values
   color: context.stylixColors.surfaceContainerHigh,
   child: Text(
-    StylixBrand.arcticForge.displayName, // "Arctic Forge"
+    StylixBrand.jadeCanopy.displayName, // "Jade Canopy"
     style: context.stylixText.titleLarge?.copyWith(
       color: context.stylixColors.textPrimary,
     ),
@@ -79,19 +79,8 @@ Container(
 - Rouge Synth
 - Midnight Armor
 - Toxic Flora
-- Arctic Forge
-- Skyline Pulse
-- Neon Velvet
-- Violet Alloy
-- Phantom Mint
-- Ember Core
-- Royal Blush
-- Deep Forest
-- Tidal Mist
-- Solar Eclipse
-- Neon Tide
-- Lavender Pulse
 
 ## Example 
 
 Check out the `example/` folder for a comprehensive `DesignSystemPreviewPage` showcasing all tokens, typography, gradients, and components.
+
