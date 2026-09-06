@@ -41,10 +41,19 @@ class StylixThemeTokens {
       inputBorder: p.inputBorder,
       inputHint: p.inputHint,
 
-      successContainer: StylixPalette.container(StylixPalette.semantic.success, 0.12),
-      warningContainer: StylixPalette.container(StylixPalette.semantic.warning, 0.12),
+      successContainer: StylixPalette.container(
+        StylixPalette.semantic.success,
+        0.12,
+      ),
+      warningContainer: StylixPalette.container(
+        StylixPalette.semantic.warning,
+        0.12,
+      ),
       infoContainer: StylixPalette.container(StylixPalette.semantic.info, 0.12),
-      errorContainer: StylixPalette.container(StylixPalette.semantic.error, 0.12),
+      errorContainer: StylixPalette.container(
+        StylixPalette.semantic.error,
+        0.12,
+      ),
     );
   }
 
@@ -84,11 +93,19 @@ class StylixThemeTokens {
       inputBorder: p.inputBorder,
       inputHint: p.inputHint,
 
-      successContainer: StylixPalette.container(StylixPalette.semantic.success, 0.20),
-      warningContainer: StylixPalette.container(StylixPalette.semantic.warning, 0.20),
+      successContainer: StylixPalette.container(
+        StylixPalette.semantic.success,
+        0.20,
+      ),
+      warningContainer: StylixPalette.container(
+        StylixPalette.semantic.warning,
+        0.20,
+      ),
       infoContainer: StylixPalette.container(StylixPalette.semantic.info, 0.20),
-      errorContainer: StylixPalette.container(StylixPalette.semantic.error, 0.20),
+      errorContainer: StylixPalette.container(
+        StylixPalette.semantic.error,
+        0.20,
+      ),
     );
   }
 }
-

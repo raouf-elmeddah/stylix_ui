@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+/// Represents the available brand identities within Stylix UI.
 enum StylixBrand {
   defaultBrand,
   jadeCanopy,
@@ -9,6 +10,7 @@ enum StylixBrand {
   toxicFlora,
 }
 
+/// Defines the core primary and accent colors for a brand.
 @immutable
 class StylixBrandColors {
   final Color primary;

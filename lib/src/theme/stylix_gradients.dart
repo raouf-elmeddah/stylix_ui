@@ -600,4 +600,3 @@ class AppGradients {
     return byId[id] ?? fallback();
   }
 }
-

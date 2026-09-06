@@ -28,4 +28,3 @@ class AppCardStyles {
 
   static EdgeInsets get padding => StylixInsets.cardPadding;
 }
-

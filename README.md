@@ -17,8 +17,13 @@ Add `stylix_ui` to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  stylix_ui:
-    path: /path/to/stylix_ui
+  stylix_ui: ^1.0.0
+```
+
+Then run:
+
+```bash
+flutter pub get
 ```
 
 ## Quick Start
@@ -64,7 +69,7 @@ Container(
   color: context.stylixColors.surfaceContainerHigh,
   child: Text(
     StylixBrand.jadeCanopy.displayName, // "Jade Canopy"
-    style: context.stylixText.titleLarge?.copyWith(
+    style: Theme.of(context).textTheme.titleLarge?.copyWith(
       color: context.stylixColors.textPrimary,
     ),
   ),
@@ -83,4 +88,5 @@ Container(
 ## Example 
 
 Check out the `example/` folder for a comprehensive `DesignSystemPreviewPage` showcasing all tokens, typography, gradients, and components.
+
 

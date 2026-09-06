@@ -11,9 +11,11 @@ import 'stylix_radius.dart';
 import 'stylix_elevation.dart';
 import 'stylix_spacing.dart';
 
+/// A utility class for generating Stylix-compliant [ThemeData].
 class StylixTheme {
   StylixTheme._();
 
+  /// Generates a light mode [ThemeData] for the specified [brand] and [locale].
   static ThemeData light(StylixBrand brand, {required Locale locale}) {
     final brandColors = StylixBrandPresets.resolve(brand);
     final palette = StylixPalette.light(brandColors);
@@ -37,6 +39,7 @@ class StylixTheme {
     );
   }
 
+  /// Generates a dark mode [ThemeData] for the specified [brand] and [locale].
   static ThemeData dark(StylixBrand brand, {required Locale locale}) {
     final brandColors = StylixBrandPresets.resolve(brand);
     final palette = StylixPalette.dark(brandColors);
@@ -286,4 +289,3 @@ class StylixTheme {
     );
   }
 }
-

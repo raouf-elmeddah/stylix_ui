@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+/// Contains the complete set of resolved semantic design tokens for the theme.
 class StylixThemeColors {
   final Color background;
   final Color surface;
@@ -142,7 +143,11 @@ class StylixThemeColors {
     );
   }
 
-  static StylixThemeColors lerp(StylixThemeColors a, StylixThemeColors b, double t) {
+  static StylixThemeColors lerp(
+    StylixThemeColors a,
+    StylixThemeColors b,
+    double t,
+  ) {
     return StylixThemeColors(
       background: Color.lerp(a.background, b.background, t)!,
       surface: Color.lerp(a.surface, b.surface, t)!,
@@ -186,4 +191,3 @@ class StylixThemeColors {
     );
   }
 }
-

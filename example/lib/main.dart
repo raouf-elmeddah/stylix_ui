@@ -22,8 +22,9 @@ class _MyAppState extends State<MyApp> {
 
   void toggleThemeMode() {
     setState(() {
-      themeMode =
-          themeMode == ThemeMode.light ? ThemeMode.dark : ThemeMode.light;
+      themeMode = themeMode == ThemeMode.light
+          ? ThemeMode.dark
+          : ThemeMode.light;
     });
   }
 

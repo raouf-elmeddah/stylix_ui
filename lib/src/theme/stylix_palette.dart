@@ -7,8 +7,10 @@ class StylixPalette {
   static const StylixPaletteNeutral neutral = StylixPaletteNeutral._();
   static const StylixPaletteSemantic semantic = StylixPaletteSemantic._();
 
-  static StylixPaletteLight light(StylixBrandColors brand) => StylixPaletteLight(brand);
-  static StylixPaletteDark dark(StylixBrandColors brand) => StylixPaletteDark(brand);
+  static StylixPaletteLight light(StylixBrandColors brand) =>
+      StylixPaletteLight(brand);
+  static StylixPaletteDark dark(StylixBrandColors brand) =>
+      StylixPaletteDark(brand);
 
   static Color container(Color base, [double opacity = 0.12]) {
     return base.withValues(alpha: opacity);
@@ -99,4 +101,3 @@ class StylixPaletteDark {
   final Color inputBorder = const Color(0xFF45607A);
   Color get inputHint => textMuted;
 }
-

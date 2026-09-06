@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'stylix_brand.dart';
 
+/// Provides predefined color presets for [StylixBrand] identities.
 class StylixBrandPresets {
   StylixBrandPresets._();
 

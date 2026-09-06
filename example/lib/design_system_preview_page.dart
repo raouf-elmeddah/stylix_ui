@@ -605,7 +605,9 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
 
     return Container(
       padding: AppCardStyles.padding,
-      decoration: AppCardStyles.muted(c).copyWith(borderRadius: StylixCorners.xl),
+      decoration: AppCardStyles.muted(
+        c,
+      ).copyWith(borderRadius: StylixCorners.xl),
       child: Row(
         children: [
           Container(
@@ -957,5 +959,3 @@ class _DesignSystemPreviewPageState extends State<DesignSystemPreviewPage> {
     );
   }
 }
-
-

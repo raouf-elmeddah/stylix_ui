@@ -36,4 +36,3 @@ class StylixThemeController extends ChangeNotifier {
     notifyListeners();
   }
 }
-

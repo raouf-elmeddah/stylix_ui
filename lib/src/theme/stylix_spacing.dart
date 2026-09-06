@@ -97,4 +97,3 @@ class AppGap {
   static const Widget wXxl = SizedBox(width: AppSpacing.xxl);
   static const Widget wXxxl = SizedBox(width: AppSpacing.xxxl);
 }
-

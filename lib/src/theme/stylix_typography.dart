@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+/// Configures and generates text styles based on the active locale and brand.
 class StylixTypography {
   StylixTypography._();
 
@@ -122,4 +123,3 @@ class StylixTypography {
     );
   }
 }
-

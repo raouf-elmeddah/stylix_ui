@@ -1,3 +1,9 @@
-## 0.0.1
+## 1.0.0
 
-* TODO: Describe initial release.
+- Initial public release of Stylix UI.
+- Added semantic design tokens.
+- Added light and dark themes.
+- Added 6 core brand presets.
+- Added typography system based on Google Fonts.
+- Added BuildContext theme extensions.
+- Added comprehensive design system example.

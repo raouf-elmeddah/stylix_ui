@@ -40,4 +40,3 @@ class StylixCorners {
     Radius.circular(AppRadius.pill),
   );
 }
-

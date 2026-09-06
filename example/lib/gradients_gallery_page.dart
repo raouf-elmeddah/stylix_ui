@@ -241,5 +241,3 @@ class _GradientsGalleryPageState extends State<GradientsGalleryPage> {
     );
   }
 }
-
-
