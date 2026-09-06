@@ -24,7 +24,7 @@ class _GradientsGalleryPageState extends State<GradientsGalleryPage> {
   @override
   void initState() {
     super.initState();
-    _totalCount = AppGradients.all.length;
+    _totalCount = StylixGradients.all.length;
     _selectedIndex = widget.selectedIndex.clamp(0, _totalCount - 1);
     _jumpController.text = _selectedIndex.toString();
 
@@ -92,7 +92,7 @@ class _GradientsGalleryPageState extends State<GradientsGalleryPage> {
 
   @override
   Widget build(BuildContext context) {
-    final gradients = AppGradients.all;
+    final gradients = StylixGradients.all;
     final width = MediaQuery.of(context).size.width;
     final crossAxisCount = _getCrossAxisCount(width);
 
